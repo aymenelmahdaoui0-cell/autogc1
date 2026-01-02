@@ -1,4 +1,4 @@
-# **App Name**: CivilTrain Academy
+# **App Name**: AUTOGC
 
 ## Core Features:
 
