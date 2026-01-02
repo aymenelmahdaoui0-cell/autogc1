@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A professional shot of a modern bridge construction site at dusk.",
+      "imageUrl": "https://images.unsplash.com/photo-1686226380787-cfbd1c116786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb25zdHJ1Y3Rpb24lMjBicmlkZ2V8ZW58MHx8fHwxNzY3Mzc5OTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "construction bridge"
+    },
+    {
+      "id": "testimonial-avatar-1",
+      "description": "Headshot of a smiling construction manager.",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcyOTI1NDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "testimonial-avatar-2",
+      "description": "Headshot of a professional female engineer.",
+      "imageUrl": "https://images.unsplash.com/photo-1581093199592-d3c46ae94f40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMGVuZ2luZWVyfGVufDB8fHx8MTc2NzI5NzU2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman engineer"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Headshot of a senior civil engineer.",
+      "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjczMzMwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "about-course-image",
+      "description": "Engineers collaborating over a blueprint on a construction site.",
+      "imageUrl": "https://images.unsplash.com/photo-1682084252808-7b147ffbdbb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlbmdpbmVlcnMlMjBibHVlcHJpbnR8ZW58MHx8fHwxNzY3Mzc5OTAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "engineers blueprint"
+    }
+  ]
 }
