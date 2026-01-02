@@ -35,8 +35,8 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
 
       <Card>
         <CardHeader>
-          <CardTitle>Resources</CardTitle>
-          <CardDescription>Downloadable materials for this module.</CardDescription>
+          <CardTitle>Ressources</CardTitle>
+          <CardDescription>Matériel téléchargeable pour ce module.</CardDescription>
         </CardHeader>
         <CardContent>
           <ul className="space-y-3">
@@ -49,7 +49,7 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
                 <Button variant="outline" size="sm" asChild>
                   <a href={resource.url} download>
                     <Download className="mr-2 h-4 w-4" />
-                    Download
+                    Télécharger
                   </a>
                 </Button>
               </li>
@@ -61,15 +61,15 @@ export default function ModulePage({ params }: { params: { slug: string } }) {
       <div className="flex justify-between">
         {prevModule ? (
           <Button asChild variant="outline">
-            <Link href={`/dashboard/modules/${prevModule.slug}`}>&larr; Previous: {prevModule.title}</Link>
+            <Link href={`/dashboard/modules/${prevModule.slug}`}>&larr; Précédent: {prevModule.title}</Link>
           </Button>
         ) : <div/>}
         {nextModule ? (
           <Button asChild>
-            <Link href={`/dashboard/modules/${nextModule.slug}`}>Next: {nextModule.title} &rarr;</Link>
+            <Link href={`/dashboard/modules/${nextModule.slug}`}>Suivant: {nextModule.title} &rarr;</Link>
           </Button>
         ) : (
-          <Button disabled>End of Course</Button>
+          <Button disabled>Fin du cours</Button>
         )}
       </div>
     </div>

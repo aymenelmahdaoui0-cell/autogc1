@@ -13,10 +13,10 @@ export function Curriculum() {
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-                Course Curriculum
+                Programme du Cours
             </h2>
             <p className="mt-4 text-muted-foreground">
-                Explore our comprehensive modules, designed to take you from foundational concepts to advanced applications.
+                Découvrez nos modules complets, conçus pour vous faire passer des concepts fondamentaux aux applications avancées.
             </p>
         </div>
         <div className="mx-auto mt-12 max-w-4xl">
@@ -31,11 +31,11 @@ export function Curriculum() {
                   <div className="flex space-x-4">
                     <div className="flex items-center space-x-2 text-sm">
                         <Video className="h-4 w-4 text-primary" />
-                        <span>Video Lesson</span>
+                        <span>Leçon Vidéo</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm">
                         <FileText className="h-4 w-4 text-primary" />
-                        <span>{module.resources.length} Downloadable Resources</span>
+                        <span>{module.resources.length} Ressources Téléchargeables</span>
                     </div>
                   </div>
                 </AccordionContent>

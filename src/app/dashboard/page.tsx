@@ -12,15 +12,15 @@ export default function DashboardPage() {
                 <div className="flex justify-center mb-4">
                     <HardHatIcon className="w-16 h-16 text-primary" />
                 </div>
-                <CardTitle className="text-3xl font-headline">Welcome to CivilTrain Academy</CardTitle>
-                <CardDescription className="text-lg">You are ready to start your training. Select a module from the sidebar to begin.</CardDescription>
+                <CardTitle className="text-3xl font-headline">Bienvenue chez autogc</CardTitle>
+                <CardDescription className="text-lg">Vous êtes prêt à commencer votre formation. Sélectionnez un module dans la barre latérale pour commencer.</CardDescription>
             </CardHeader>
             <CardContent>
-                <p className="mb-4">Your first step into advanced structural engineering starts here.</p>
+                <p className="mb-4">Votre premier pas vers l'ingénierie structurale avancée commence ici.</p>
                 {course.modules.length > 0 && (
                     <Button asChild size="lg">
                         <Link href={`/dashboard/modules/${course.modules[0].slug}`}>
-                            Start with Module 1
+                            Commencer avec le Module 1
                         </Link>
                     </Button>
                 )}

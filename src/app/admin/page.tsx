@@ -7,8 +7,8 @@ export default function AdminDashboardPage() {
     <Tabs defaultValue="trainees">
       <div className="flex items-center">
         <TabsList>
-          <TabsTrigger value="trainees">Trainee Management</TabsTrigger>
-          <TabsTrigger value="content">Content Management</TabsTrigger>
+          <TabsTrigger value="trainees">Gestion des Stagiaires</TabsTrigger>
+          <TabsTrigger value="content">Gestion de Contenu</TabsTrigger>
         </TabsList>
       </div>
       <TabsContent value="trainees">

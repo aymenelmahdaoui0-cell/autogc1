@@ -8,10 +8,10 @@ export function About() {
   const aboutImage = PlaceHolderImages.find(p => p.id === 'about-course-image');
 
   const features = [
-    "Expert-led video modules",
-    "Real-world project blueprints",
-    "Downloadable PDF resources",
-    "Direct application to industry standards"
+    "Modules vidéo dirigés par des experts",
+    "Plans de projets réels",
+    "Ressources PDF téléchargeables",
+    "Application directe aux normes de l'industrie"
   ];
 
   return (
@@ -19,7 +19,7 @@ export function About() {
       <div className="container grid gap-12 md:grid-cols-2 md:gap-16">
         <div className="flex flex-col justify-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-            About The Course
+            À Propos du Cours
           </h2>
           <p className="mt-4 text-muted-foreground">
             {course.description}

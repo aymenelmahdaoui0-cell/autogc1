@@ -13,7 +13,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <Button type="submit" className="w-full" disabled={pending}>
-      {pending ? 'Submitting...' : 'Request Access'}
+      {pending ? 'Envoi en cours...' : 'Demander l\'accès'}
     </Button>
   );
 }
@@ -27,13 +27,13 @@ export function JoinForm() {
   useEffect(() => {
     if (state?.message && !state.message.includes("valid")) {
         toast({
-            title: "Success!",
+            title: "Succès!",
             description: state.message,
         });
         formRef.current?.reset();
     } else if (state?.message) {
         toast({
-            title: "Error",
+            title: "Erreur",
             description: state.message,
             variant: "destructive",
         })
@@ -48,8 +48,8 @@ export function JoinForm() {
                     <div className='flex justify-center mb-2'>
                         <HardHatIcon className="h-10 w-10 text-primary" />
                     </div>
-                    <CardTitle className="font-headline text-3xl">Join CivilTrain Academy</CardTitle>
-                    <CardDescription>Enter your email below to request access to the course. We'll notify you upon approval.</CardDescription>
+                    <CardTitle className="font-headline text-3xl">Rejoignez autogc</CardTitle>
+                    <CardDescription>Entrez votre email ci-dessous pour demander l'accès au cours. Nous vous informerons après approbation.</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <form ref={formRef} action={formAction} className="space-y-4">
@@ -58,7 +58,7 @@ export function JoinForm() {
                                 id="email"
                                 name="email"
                                 type="email"
-                                placeholder="you@example.com"
+                                placeholder="vous@exemple.com"
                                 required
                             />
                         </div>

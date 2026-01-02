@@ -22,17 +22,17 @@ export function Hero() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
         <div className="container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
-            Build Your Future in Civil Engineering
+            Bâtissez Votre Avenir en Génie Civil
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-300 md:text-xl">
-            Master essential skills with expert-led courses and hands-on projects.
+            Maîtrisez les compétences essentielles avec des cours dirigés par des experts et des projets pratiques.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="#join-now">Join Now</Link>
+              <Link href="#join-now">Inscrivez-vous</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-              <Link href="#curriculum">View Curriculum</Link>
+              <Link href="#curriculum">Voir le Programme</Link>
             </Button>
           </div>
         </div>

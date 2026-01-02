@@ -15,7 +15,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <Button type="submit" disabled={pending}>
-      {pending ? 'Updating...' : 'Update Module'}
+      {pending ? 'Mise à jour...' : 'Mettre à jour le Module'}
     </Button>
   );
 }
@@ -29,13 +29,13 @@ export function ContentManagement() {
   useEffect(() => {
     if (state?.message && !state.message.includes("Invalid")) {
         toast({
-            title: "Success",
+            title: "Succès",
             description: state.message,
         });
         formRef.current?.reset();
     } else if (state?.message) {
         toast({
-            title: "Error",
+            title: "Erreur",
             description: state.message,
             variant: "destructive",
         })
@@ -45,18 +45,18 @@ export function ContentManagement() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Content Management</CardTitle>
+        <CardTitle>Gestion de Contenu</CardTitle>
         <CardDescription>
-          Update the Google Drive video links for course modules.
+          Mettez à jour les liens vidéo Google Drive pour les modules de cours.
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form ref={formRef} action={formAction} className="space-y-4">
           <div className="grid gap-2">
-            <Label htmlFor="moduleId">Select Module</Label>
+            <Label htmlFor="moduleId">Sélectionner un Module</Label>
             <Select name="moduleId" required>
               <SelectTrigger>
-                <SelectValue placeholder="Select a module to update" />
+                <SelectValue placeholder="Sélectionnez un module à mettre à jour" />
               </SelectTrigger>
               <SelectContent>
                 {course.modules.map((module) => (
@@ -68,7 +68,7 @@ export function ContentManagement() {
             </Select>
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="videoUrl">New Google Drive Video URL</Label>
+            <Label htmlFor="videoUrl">Nouvelle URL de Vidéo Google Drive</Label>
             <Input
               id="videoUrl"
               name="videoUrl"

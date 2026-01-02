@@ -7,7 +7,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 200 50"
       width="140"
       height="40"
-      aria-label="CivilTrain Academy Logo"
+      aria-label="Logo autogc"
       {...props}
     >
       <g className="fill-primary">
@@ -24,7 +24,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
         fontWeight="bold"
         className="fill-foreground"
       >
-        CivilTrain
+        autogc
       </text>
     </svg>
   );

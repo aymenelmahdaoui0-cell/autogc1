@@ -14,13 +14,13 @@ export function Header() {
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center space-x-2">
             <Button asChild variant="ghost">
-              <Link href="/login">Trainee Login</Link>
+              <Link href="/login">Connexion Stagiaire</Link>
             </Button>
             <Button asChild>
-              <Link href="/dashboard">Go to Dashboard</Link>
+              <Link href="/dashboard">Aller au Tableau de Bord</Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href="/admin/login">Admin Access</Link>
+              <Link href="/admin/login">Accès Admin</Link>
             </Button>
           </nav>
         </div>

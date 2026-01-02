@@ -9,10 +9,10 @@ export function Testimonials() {
       <div className="container">
         <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-                What Our Graduates Say
+                Ce que Disent Nos Diplômés
             </h2>
             <p className="mt-4 text-muted-foreground">
-                Hear from professionals who have advanced their careers with CivilTrain Academy.
+                Écoutez les professionnels qui ont fait progresser leur carrière avec autogc.
             </p>
         </div>
 

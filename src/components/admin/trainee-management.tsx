@@ -13,13 +13,20 @@ export function TraineeManagement() {
     approved: 'default',
     rejected: 'destructive',
   } as const;
+  
+  const statusTranslation = {
+    pending: 'en attente',
+    approved: 'approuvé',
+    rejected: 'rejeté',
+  };
+
 
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Trainee Management</CardTitle>
+        <CardTitle>Gestion des Stagiaires</CardTitle>
         <CardDescription>
-          Review and manage access for users who have requested to join.
+          Examinez et gérez l'accès des utilisateurs qui ont demandé à s'inscrire.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -27,8 +34,8 @@ export function TraineeManagement() {
           <TableHeader>
             <TableRow>
               <TableHead>Email</TableHead>
-              <TableHead>Submitted</TableHead>
-              <TableHead>Status</TableHead>
+              <TableHead>Soumis le</TableHead>
+              <TableHead>Statut</TableHead>
               <TableHead className="text-right">Actions</TableHead>
             </TableRow>
           </TableHeader>
@@ -38,30 +45,30 @@ export function TraineeManagement() {
                 <TableCell className="font-medium">{trainee.email}</TableCell>
                 <TableCell>{trainee.submittedAt.toLocaleDateString()}</TableCell>
                 <TableCell>
-                  <Badge variant={statusVariant[trainee.status]}>{trainee.status}</Badge>
+                  <Badge variant={statusVariant[trainee.status]}>{statusTranslation[trainee.status]}</Badge>
                 </TableCell>
                 <TableCell className="text-right">
                   {trainee.status === 'pending' && (
                     <form className="inline-flex gap-2">
                        <Button formAction={async () => { await approveTrainee(trainee.id) }} size="sm" variant="outline">
-                         <Check className="h-4 w-4 mr-2" /> Approve
+                         <Check className="h-4 w-4 mr-2" /> Approuver
                        </Button>
                        <Button formAction={async () => { await rejectTrainee(trainee.id) }} size="sm" variant="destructive">
-                         <X className="h-4 w-4 mr-2" /> Reject
+                         <X className="h-4 w-4 mr-2" /> Rejeter
                        </Button>
                     </form>
                   )}
                    {trainee.status === 'approved' && (
                     <form className="inline-flex">
                        <Button formAction={async () => { await rejectTrainee(trainee.id) }} size="sm" variant="destructive">
-                         <X className="h-4 w-4 mr-2" /> Reject
+                         <X className="h-4 w-4 mr-2" /> Rejeter
                        </Button>
                     </form>
                   )}
                    {trainee.status === 'rejected' && (
                     <form className="inline-flex">
                        <Button formAction={async () => { await approveTrainee(trainee.id) }} size="sm" variant="outline">
-                         <Check className="h-4 w-4 mr-2" /> Approve
+                         <Check className="h-4 w-4 mr-2" /> Approuver
                        </Button>
                     </form>
                   )}

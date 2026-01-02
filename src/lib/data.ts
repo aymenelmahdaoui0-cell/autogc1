@@ -8,51 +8,51 @@ export const trainees: Trainee[] = [
 ];
 
 export const course: Course = {
-  title: 'Advanced Structural Engineering',
-  description: 'Master the principles of structural analysis and design with our comprehensive course. From foundational theories to advanced practical applications, this program is designed to elevate your civil engineering career.',
+  title: 'Ingénierie Structurale Avancée',
+  description: 'Maîtrisez les principes de l\'analyse et de la conception des structures avec notre cours complet. Des théories fondamentales aux applications pratiques avancées, ce programme est conçu pour faire progresser votre carrière en génie civil.',
   modules: [
     {
       id: '1',
       slug: 'introduction-to-structures',
-      title: 'Module 1: Introduction to Structures',
-      description: 'An overview of structural engineering principles and basic concepts.',
+      title: 'Module 1: Introduction aux Structures',
+      description: 'Un aperçu des principes de l\'ingénierie structurale et des concepts de base.',
       videoUrl: 'https://drive.google.com/file/d/1B4_3YV0-e_y_uPz2yLQrDyABrtoZCaDc/preview',
       resources: [
-        { name: 'Course Syllabus.pdf', type: 'pdf', url: '#' },
-        { name: 'Basic Formulas.pdf', type: 'pdf', url: '#' },
+        { name: 'Syllabus du cours.pdf', type: 'pdf', url: '#' },
+        { name: 'Formules de base.pdf', type: 'pdf', url: '#' },
       ],
     },
     {
       id: '2',
       slug: 'steel-design',
-      title: 'Module 2: Steel Design',
-      description: 'Learn about the design of steel structures, including beams, columns, and connections.',
+      title: 'Module 2: Conception en Acier',
+      description: 'Apprenez la conception des structures en acier, y compris les poutres, les colonnes et les connexions.',
       videoUrl: 'https://drive.google.com/file/d/1B4_3YV0-e_y_uPz2yLQrDyABrtoZCaDc/preview',
       resources: [
-        { name: 'Steel Beam Design Guide.pdf', type: 'pdf', url: '#' },
-        { name: 'Blueprint-Steel-Frame.pdf', type: 'blueprint', url: '#' },
+        { name: 'Guide de conception de poutre en acier.pdf', type: 'pdf', url: '#' },
+        { name: 'Plan-Structure-Acier.pdf', type: 'blueprint', url: '#' },
       ],
     },
     {
       id: '3',
       slug: 'concrete-design',
-      title: 'Module 3: Concrete Design',
-      description: 'Dive into reinforced concrete design, covering slabs, foundations, and retaining walls.',
+      title: 'Module 3: Conception en Béton',
+      description: 'Plongez dans la conception en béton armé, couvrant les dalles, les fondations et les murs de soutènement.',
       videoUrl: 'https://drive.google.com/file/d/1B4_3YV0-e_y_uPz2yLQrDyABrtoZCaDc/preview',
       resources: [
-        { name: 'Reinforced Concrete Manual.pdf', type: 'pdf', url: '#' },
-        { name: 'Blueprint-Foundation.pdf', type: 'blueprint', url: '#' },
+        { name: 'Manuel du béton armé.pdf', type: 'pdf', url: '#' },
+        { name: 'Plan-Fondation.pdf', type: 'blueprint', url: '#' },
       ],
     },
     {
         id: '4',
         slug: 'seismic-analysis',
-        title: 'Module 4: Seismic Analysis',
-        description: 'Understand the effects of earthquakes on structures and how to design for seismic resilience.',
+        title: 'Module 4: Analyse Sismique',
+        description: 'Comprenez les effets des tremblements de terre sur les structures et comment concevoir pour la résilience sismique.',
         videoUrl: 'https://drive.google.com/file/d/1B4_3YV0-e_y_uPz2yLQrDyABrtoZCaDc/preview',
         resources: [
-          { name: 'Seismic Design Principles.pdf', type: 'pdf', url: '#' },
-          { name: 'Blueprint-Seismic-Retrofit.pdf', type: 'blueprint', url: '#' },
+          { name: 'Principes de conception sismique.pdf', type: 'pdf', url: '#' },
+          { name: 'Plan-Rénovation-Sismique.pdf', type: 'blueprint', url: '#' },
         ],
       },
   ],
@@ -62,22 +62,22 @@ export const testimonials: Testimonial[] = [
     {
         id: '1',
         name: 'Michael Chen',
-        title: 'Structural Engineer, BuildRight Inc.',
-        quote: 'This course was a game-changer for my career. The practical examples and in-depth modules on steel and concrete design were incredibly valuable. Highly recommended!',
+        title: 'Ingénieur en structure, BuildRight Inc.',
+        quote: 'Ce cours a changé la donne pour ma carrière. Les exemples pratiques et les modules approfondis sur la conception en acier et en béton ont été incroyablement précieux. Fortement recommandé!',
         avatarImageId: 'testimonial-avatar-1',
     },
     {
         id: '2',
         name: 'Dr. Emily Carter',
-        title: 'University Professor',
-        quote: 'As an educator, I\'m impressed by the comprehensive curriculum. It bridges the gap between academic theory and real-world engineering challenges perfectly.',
+        title: 'Professeure d\'université',
+        quote: 'En tant qu\'éducatrice, je suis impressionnée par le programme complet. Il comble parfaitement le fossé entre la théorie académique et les défis du monde réel de l\'ingénierie.',
         avatarImageId: 'testimonial-avatar-2',
     },
     {
         id: '3',
         name: 'David Lee',
-        title: 'Project Manager, Apex Constructions',
-        quote: 'The content is top-notch and directly applicable to my daily work. The section on seismic analysis helped my team tackle a complex project with confidence.',
+        title: 'Chef de projet, Apex Constructions',
+        quote: 'Le contenu est de premier ordre et directement applicable à mon travail quotidien. La section sur l\'analyse sismique a aidé mon équipe à aborder un projet complexe avec confiance.',
         avatarImageId: 'testimonial-avatar-3',
     }
 ]

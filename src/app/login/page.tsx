@@ -10,7 +10,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen w-full items-center justify-center bg-secondary p-4">
        <div className="absolute top-4 left-4">
           <Button asChild variant="ghost">
-            <Link href="/">&larr; Back to Home</Link>
+            <Link href="/">&larr; Retour à l'accueil</Link>
           </Button>
         </div>
       <Card className="mx-auto w-full max-w-sm">
@@ -18,8 +18,8 @@ export default function LoginPage() {
           <div className="flex justify-center mb-4">
             <Logo />
           </div>
-          <CardTitle className="text-2xl">Trainee Login</CardTitle>
-          <CardDescription>Enter your approved email to access the dashboard.</CardDescription>
+          <CardTitle className="text-2xl">Connexion Stagiaire</CardTitle>
+          <CardDescription>Entrez votre e-mail approuvé pour accéder au tableau de bord.</CardDescription>
         </CardHeader>
         <CardContent>
           <form className="grid gap-4">
@@ -28,17 +28,17 @@ export default function LoginPage() {
               <Input
                 id="email"
                 type="email"
-                placeholder="m@example.com"
+                placeholder="m@exemple.com"
                 required
               />
             </div>
             <Button type="submit" className="w-full" asChild>
-                <Link href="/dashboard">Login</Link>
+                <Link href="/dashboard">Se Connecter</Link>
             </Button>
             <p className="mt-4 text-center text-sm text-muted-foreground">
-              Don't have access?{' '}
+              Vous n'avez pas d'accès ?{' '}
               <Link href="/#join-now" className="underline">
-                Request it now
+                Demandez-le maintenant
               </Link>
             </p>
           </form>
